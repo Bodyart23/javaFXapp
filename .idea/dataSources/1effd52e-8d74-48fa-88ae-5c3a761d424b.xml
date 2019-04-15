@@ -9,10 +9,10 @@
       <Comment>default administrative connection database</Comment>
       <StateNumber>567</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>676</IntrospectionStateNumber>
+      <IntrospectionStateNumber>704</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
-      <Relations>sequence|table|16415|16417|1
+      <Relations>sequence|table|16525|16527|1
 </Relations>
     </database>
     <role id="3" parent="1" name="pg_execute_server_program">
@@ -98,7 +98,7 @@
       <Comment>standard public schema</Comment>
       <StateNumber>360</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>677</IntrospectionStateNumber>
+      <IntrospectionStateNumber>705</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -167,23 +167,23 @@
       <SchemaId>11</SchemaId>
     </extension>
     <sequence id="26" parent="17" name="users_id_seq">
-      <ObjectId>16415</ObjectId>
+      <ObjectId>16525</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>608</StateNumber>
+      <StateNumber>700</StateNumber>
       <SequenceIdentity>1..2147483647</SequenceIdentity>
       <CacheSize>1</CacheSize>
       <DataType>integer</DataType>
     </sequence>
     <table id="27" parent="17" name="users">
-      <ObjectId>16417</ObjectId>
+      <ObjectId>16527</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>675</StateNumber>
+      <StateNumber>700</StateNumber>
     </table>
     <column id="28" parent="27" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>608</StateNumber>
+      <StateNumber>700</StateNumber>
       <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
@@ -191,31 +191,37 @@
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>675</StateNumber>
+      <StateNumber>700</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="30" parent="27" name="password">
       <Position>3</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>656</StateNumber>
+      <StateNumber>700</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="31" parent="27" name="autologout">
       <Position>4</Position>
-      <DataType>interval|0s</DataType>
-      <StateNumber>608</StateNumber>
-      <TypeId>1186</TypeId>
+      <DataType>integer|0s</DataType>
+      <StateNumber>700</StateNumber>
+      <TypeId>23</TypeId>
     </column>
     <index id="32" parent="27" name="users_id_uindex">
-      <ObjectId>16425</ObjectId>
-      <StateNumber>675</StateNumber>
+      <ObjectId>16534</ObjectId>
+      <StateNumber>701</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="33" parent="27" name="users_password_uindex">
-      <ObjectId>16498</ObjectId>
-      <StateNumber>675</StateNumber>
+    <index id="33" parent="27" name="users_name_uindex">
+      <ObjectId>16535</ObjectId>
+      <StateNumber>702</StateNumber>
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="34" parent="27" name="users_password_uindex">
+      <ObjectId>16536</ObjectId>
+      <StateNumber>703</StateNumber>
       <ColNames>password</ColNames>
       <Unique>1</Unique>
     </index>

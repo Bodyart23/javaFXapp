@@ -48,9 +48,9 @@ public class DatabaseHandler extends Configs {
                 User user = new User();
                 user.setUserName(result.getString("name"));
                 user.setPussword(result.getString("password"));
+                user.setAutologout(result.getInt("autologout"));
                 list.add(user);
             }
-            System.out.println("All records have been selected");
             return list;
         } catch(Exception e) {System.out.println(e);}
         return null;

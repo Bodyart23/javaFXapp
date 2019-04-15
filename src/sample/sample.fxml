@@ -6,118 +6,95 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
-            prefWidth="350.0" style="-fx-background-color: #200772;" xmlns="http://javafx.com/javafx/11.0.1"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="350.0" style="-fx-background-color: #200772;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <children>
         <AnchorPane layoutY="122.0" prefHeight="478.0" prefWidth="350.0">
             <children>
-                <TextField fx:id="password_field" layoutX="56.0" layoutY="14.0" prefHeight="35.0" prefWidth="239.0"
-                           promptText="Password"
-                           style="-fx-background-color: #7c7878; -fx-border-color: silver; -fx-border-radius: 5;">
+                <TextField fx:id="password_field" layoutX="56.0" layoutY="14.0" prefHeight="35.0" prefWidth="239.0" promptText="Password" style="-fx-background-color: #7c7878; -fx-border-color: silver; -fx-border-radius: 5;">
                     <font>
-                        <Font size="14.0"/>
+                        <Font size="14.0" />
                     </font>
                 </TextField>
-                <Button fx:id="clear_button" layoutX="56.0" layoutY="58.0" mnemonicParsing="false" prefHeight="15.0"
-                        prefWidth="113.0" style="-fx-background-color: #7c7878; -fx-border-radius: 5;" text="Clear"
-                        textFill="#b5b2b2">
+                <Button fx:id="clear_button" layoutX="56.0" layoutY="58.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="113.0" style="-fx-background-color: #7c7878; -fx-border-radius: 5;" text="Clear" textFill="#b5b2b2">
                     <font>
-                        <Font size="13.0"/>
+                        <Font size="13.0" />
                     </font>
                 </Button>
-                <Button fx:id="backspace_button" layoutX="182.0" layoutY="58.0" mnemonicParsing="false"
-                        prefHeight="28.0" prefWidth="113.0" style="-fx-background-color: #7c7878; -fx-border-radius: 5;"
-                        text="Backspace" textFill="#b5b2b2">
+                <Button fx:id="backspace_button" layoutX="182.0" layoutY="58.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="113.0" style="-fx-background-color: #7c7878; -fx-border-radius: 5;" text="Backspace" textFill="#b5b2b2">
                     <font>
-                        <Font size="13.0"/>
+                        <Font size="13.0" />
                     </font>
                 </Button>
-                <Button fx:id="button_1" layoutX="56.0" layoutY="97.0" mnemonicParsing="false" prefHeight="39.0"
-                        prefWidth="75.0" style="-fx-background-color: #7c7878;" text="1" textFill="WHITE">
+                <Button fx:id="button_1" layoutX="56.0" layoutY="97.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="75.0" style="-fx-background-color: #7c7878;" text="1" textFill="WHITE">
                     <font>
-                        <Font size="18.0"/>
+                        <Font size="18.0" />
                     </font>
                 </Button>
-                <Button fx:id="button_2" layoutX="138.0" layoutY="97.0" mnemonicParsing="false" prefHeight="39.0"
-                        prefWidth="75.0" style="-fx-background-color: #7c7878;" text="2" textFill="WHITE">
+                <Button fx:id="button_2" layoutX="138.0" layoutY="97.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="75.0" style="-fx-background-color: #7c7878;" text="2" textFill="WHITE">
                     <font>
-                        <Font size="18.0"/>
+                        <Font size="18.0" />
                     </font>
                 </Button>
-                <Button fx:id="button_3" layoutX="220.0" layoutY="97.0" mnemonicParsing="false" prefHeight="39.0"
-                        prefWidth="75.0" style="-fx-background-color: #7c7878;" text="3" textFill="WHITE">
+                <Button fx:id="button_3" layoutX="220.0" layoutY="97.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="75.0" style="-fx-background-color: #7c7878;" text="3" textFill="WHITE">
                     <font>
-                        <Font size="18.0"/>
+                        <Font size="18.0" />
                     </font>
                 </Button>
-                <Button fx:id="button_4" layoutX="56.0" layoutY="143.0" mnemonicParsing="false" prefHeight="39.0"
-                        prefWidth="75.0" style="-fx-background-color: #7c7878;" text="4" textFill="WHITE">
+                <Button fx:id="button_4" layoutX="56.0" layoutY="143.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="75.0" style="-fx-background-color: #7c7878;" text="4" textFill="WHITE">
                     <font>
-                        <Font size="18.0"/>
+                        <Font size="18.0" />
                     </font>
                 </Button>
-                <Button fx:id="button_5" layoutX="138.0" layoutY="143.0" mnemonicParsing="false" prefHeight="39.0"
-                        prefWidth="75.0" style="-fx-background-color: #7c7878;" text="5" textFill="WHITE">
+                <Button fx:id="button_5" layoutX="138.0" layoutY="143.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="75.0" style="-fx-background-color: #7c7878;" text="5" textFill="WHITE">
                     <font>
-                        <Font size="18.0"/>
+                        <Font size="18.0" />
                     </font>
                 </Button>
-                <Button fx:id="button_6" layoutX="220.0" layoutY="143.0" mnemonicParsing="false" prefHeight="39.0"
-                        prefWidth="75.0" style="-fx-background-color: #7c7878;" text="6" textFill="WHITE">
+                <Button fx:id="button_6" layoutX="220.0" layoutY="143.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="75.0" style="-fx-background-color: #7c7878;" text="6" textFill="WHITE">
                     <font>
-                        <Font size="18.0"/>
+                        <Font size="18.0" />
                     </font>
                 </Button>
-                <Button fx:id="button_7" layoutX="56.0" layoutY="189.0" mnemonicParsing="false" prefHeight="39.0"
-                        prefWidth="75.0" style="-fx-background-color: #7c7878;" text="7" textFill="WHITE">
+                <Button fx:id="button_7" layoutX="56.0" layoutY="189.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="75.0" style="-fx-background-color: #7c7878;" text="7" textFill="WHITE">
                     <font>
-                        <Font size="18.0"/>
+                        <Font size="18.0" />
                     </font>
                 </Button>
-                <Button fx:id="button_8" layoutX="138.0" layoutY="189.0" mnemonicParsing="false" prefHeight="39.0"
-                        prefWidth="75.0" style="-fx-background-color: #7c7878;" text="8" textFill="WHITE">
+                <Button fx:id="button_8" layoutX="138.0" layoutY="189.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="75.0" style="-fx-background-color: #7c7878;" text="8" textFill="WHITE">
                     <font>
-                        <Font size="18.0"/>
+                        <Font size="18.0" />
                     </font>
                 </Button>
-                <Button fx:id="button_9" layoutX="220.0" layoutY="189.0" mnemonicParsing="false" prefHeight="39.0"
-                        prefWidth="75.0" style="-fx-background-color: #7c7878;" text="9" textFill="WHITE">
+                <Button fx:id="button_9" layoutX="220.0" layoutY="189.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="75.0" style="-fx-background-color: #7c7878;" text="9" textFill="WHITE">
                     <font>
-                        <Font size="18.0"/>
+                        <Font size="18.0" />
                     </font>
                 </Button>
-                <Button fx:id="button_0" layoutX="138.0" layoutY="235.0" mnemonicParsing="false" prefHeight="39.0"
-                        prefWidth="75.0" style="-fx-background-color: #7c7878;" text="0" textFill="WHITE">
+                <Button fx:id="button_0" layoutX="138.0" layoutY="235.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="75.0" style="-fx-background-color: #7c7878;" text="0" textFill="WHITE">
                     <font>
-                        <Font size="18.0"/>
+                        <Font size="18.0" />
                     </font>
                 </Button>
-                <Button fx:id="login_button" layoutX="56.0" layoutY="289.0" mnemonicParsing="false" prefHeight="39.0"
-                        prefWidth="239.0" style="-fx-background-color: #A18754;" text="LOG IN" textFill="WHITE">
+                <Button fx:id="login_button" layoutX="56.0" layoutY="289.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="39.0" prefWidth="239.0" style="-fx-background-color: #A18754;" text="LOG IN" textFill="WHITE">
                     <font>
-                        <Font size="18.0"/>
+                        <Font size="18.0" />
                     </font>
                 </Button>
-                <Button fx:id="clock_button" layoutX="56.0" layoutY="342.0" mnemonicParsing="false" prefHeight="39.0"
-                        prefWidth="239.0" style="-fx-background-color: #3E774F;" text="CLOCK IN/OUT" textFill="WHITE">
+                <Button fx:id="clock_button" layoutX="56.0" layoutY="342.0" mnemonicParsing="false" onAction="#clockButton" prefHeight="39.0" prefWidth="239.0" style="-fx-background-color: #3E774F;" text="CLOCK IN/OUT" textFill="WHITE">
                     <font>
-                        <Font size="18.0"/>
+                        <Font size="18.0" />
                     </font>
                 </Button>
             </children>
         </AnchorPane>
-        <Label fx:id="timeInscription" layoutX="25.0" layoutY="14.0" prefHeight="13.0" prefWidth="51.0" text="Time"
-               textFill="#7c7878">
+        <Label fx:id="timeInscription" layoutX="25.0" layoutY="14.0" prefHeight="13.0" prefWidth="51.0" text="Time" textFill="#7c7878">
             <font>
-                <Font name="System Bold" size="19.0"/>
+                <Font name="System Bold" size="19.0" />
             </font>
         </Label>
-        <Label fx:id="currentTime" layoutX="22.0" layoutY="42.0" prefHeight="3.0" prefWidth="306.0" text="CurrentTime"
-               textFill="#7c7878">
+        <Label fx:id="currentTime" layoutX="22.0" layoutY="42.0" prefHeight="3.0" prefWidth="306.0" text="CurrentTime" textFill="#7c7878">
             <font>
-                <Font name="System Bold Italic" size="24.0"/>
+                <Font name="System Bold Italic" size="24.0" />
             </font>
         </Label>
     </children>

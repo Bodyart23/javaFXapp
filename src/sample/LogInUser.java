@@ -15,7 +15,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
-public class LogInUser extends Controller {
+public class LogInUser {
 
     @FXML
     private ResourceBundle resources;
@@ -35,42 +35,27 @@ public class LogInUser extends Controller {
     @FXML
     private Button exit;
 
-    private String username;
-
-    public String getUserName() {
-        return username;
-    }
-
-    public void setUserName(String name) {
-        this.username = name;
-    }
+    public String username;
 
     @FXML
     void initialize() {
         time();
-            exit.setOnAction(click->{
-                openNewScene("/sample/sample.fxml");
-            });
-            userName.setText(getUserName());
     }
 
-
-    public void openNewScene(String window){
-        exit.getScene().getWindow().hide();
-
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource(window));
-
-        try{
-            loader.load();
-        }catch (IOException e){
-            e.printStackTrace();
-        }
-        Parent root = loader.getRoot();
-        Stage stage = new Stage();
-        stage.setScene(new Scene(root));
-        stage.show();
+    @FXML
+    private void exit() {
+        openNewScene("/sample/sample.fxml");
     }
+
+    public void setUsername(String username) {
+        userName.setText(this.username = username);
+    }
+
+    public void method(){
+        time();
+      openNewScene("/sample/sample.fxml");
+    }
+
     private void time() {
         Thread thread = new Thread(new Runnable() {
             @Override
@@ -94,6 +79,22 @@ public class LogInUser extends Controller {
         });
         thread.setDaemon(true);
         thread.start();
+    }
+
+    private void openNewScene(String window) {
+        exit.getScene().getWindow().hide();
+
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource(window));
+        try {
+            loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Parent root = loader.getRoot();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.show();
     }
 }
 
